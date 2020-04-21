@@ -5,6 +5,11 @@ Login to SSH and choose which path you need to serve over HTTP.
 
 > This script is based on Python 3+
 
+Intall 
+```sh
+python3 -m pip install zssh
+```
+
 Expose a directory to `ZIP`
 ```sh
 $ zssh -as --path /desktop/path_to_expose
