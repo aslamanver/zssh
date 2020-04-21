@@ -1,6 +1,8 @@
 # ZSSH - ZIP over SSH
 #### Simple Python script to exchange files between servers.
 
+[![PyPI version](https://badge.fury.io/py/zssh.svg)](https://pypi.org/project/zssh)
+
 Login to SSH and choose which path you need to serve over HTTP.
 
 > This script is based on Python 3+
