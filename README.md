@@ -22,7 +22,7 @@ $ zssh -ad --path /desktop/path_to_download --zip http://mydomain.com/temp_file.
 
 Execute the script using remote URL
 ```sh
-python3 <(wget -o /dev/null https://aslamanver.github.io/zssh/zssh -q -O-) -h
+python3 <(wget -o /dev/null https://aslamanver.github.io/zssh/zssh/zssh.py -q -O-) -h
 ```
 
 Usage
