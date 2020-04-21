@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="zssh",  # Replace with your own username
-    version="1.1.0",
+    version="1.1.1",
     author="Aslam Anver",
     author_email="aslammohammedb@outlook.com",
     description="ZSSH - ZIP over SSH",
