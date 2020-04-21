@@ -5,24 +5,19 @@ Login to SSH and choose which path you need to serve over HTTP.
 
 > This script is based on Python 3+
 
-Intall 
+### Intall from PIP
 ```sh
 python3 -m pip install zssh
 ```
 
 Expose a directory to `ZIP`
 ```sh
-$ zssh -as --path /desktop/path_to_expose
+$ python3 -m zssh -as --path /desktop/path_to_expose
 ```
 
 Extract a `ZIP` from URL
 ```sh
-$ zssh -ad --path /desktop/path_to_download --zip http://mydomain.com/temp_file.zip
-```
-
-Execute the script using remote URL
-```sh
-python3 <(wget -o /dev/null https://aslamanver.github.io/zssh/zssh/zssh.py -q -O-) -h
+$ python3 -m zssh -ad --path /desktop/path_to_download --zip http://mydomain.com/temp_file.zip
 ```
 
 Usage
