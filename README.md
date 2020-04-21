@@ -5,7 +5,7 @@ Login to SSH and choose which path you need to serve over HTTP.
 
 > This script is based on Python 3+
 
-### Intall from PIP
+#### Intall from PIP
 ```sh
 python3 -m pip install zssh
 ```
