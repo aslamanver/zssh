@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="zssh",  # Replace with your own username
-    version="1.1.1",
+    name="zssh",
+    version="1.2.0",
     author="Aslam Anver",
     author_email="aslammohammedb@outlook.com",
     description="ZSSH - ZIP over SSH",

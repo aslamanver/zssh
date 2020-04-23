@@ -35,8 +35,10 @@ def server(args):
         os.mkdir(temp_dir)
 
         with ZipFile(temp_dir + '/' + hash_name + '.zip', 'w') as mzip:
-            for file in glob.glob('*'):
-                mzip.write(file)
+            for folderName, subfolders, filenames in os.walk('.'):
+                for filename in filenames:
+                    filePath = os.path.join(folderName, filename)
+                    mzip.write(filePath)
 
     os.chdir(temp_dir)
 
@@ -57,7 +59,7 @@ def server(args):
 
         download_url = "http://" + ip + ":" + str(port) + "/" + hash_name + ".zip"
 
-        print("\n$ zssh -ad --zip " + download_url + " --path [PATH]\n")
+        print("\n$ python3 -m zssh -ad --zip " + download_url + " --path [PATH]\n")
 
         try:
             httpd.serve_forever()
